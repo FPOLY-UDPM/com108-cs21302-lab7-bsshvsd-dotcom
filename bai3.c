@@ -19,8 +19,8 @@ int main() {
     // Nhập 5 chuỗi
     for (int i = 0; i < MAX_STRINGS; i++) {
         printf("Nhap vao chuoi %d: ", i + 1);
-        fgets(strings[i], sizeof(strings[i]), stdin);
-        strings[i][strcspn(strings[i], "\n")] = '\0'; // Loại bỏ ký tự newline
+        gets(strings[i]);
+        strings[i][strlen(strings[i]) - 1] = '\0'; // Loại bỏ ký tự newline
     }
 
     // Sắp xếp chuỗi theo thứ tự chữ cái
