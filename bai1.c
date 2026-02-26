@@ -18,7 +18,7 @@ int main() {
     int vowelCount = 0, consonantCount = 0;
 
     printf("Nhap vao mot chuoi: ");
-    fgets(str, sizeof(str), stdin);
+    gets(str);
 
     for (int i = 0; str[i] != '\0'; i++) {
         char ch = str[i];
